@@ -22,10 +22,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/r/[communityId]": [
+    "/r/[communityId]/submit": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/r/[communityId].js"
+      "static/chunks/pages/r/[communityId]/submit.js"
     ]
   },
   "ampFirstPages": []
