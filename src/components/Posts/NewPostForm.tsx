@@ -116,6 +116,8 @@ const formTabs: TabItem[] = [
           await updateDoc(postDocRef, {
             imageURL: downloadURL,
           });
+          // redirect the user back to the communitypage using the router
+          router.back();
           console.log("HERE IS DOWNLOAD URL", downloadURL);
         }
         
@@ -125,8 +127,7 @@ const formTabs: TabItem[] = [
       }
       setLoading(false)
       
-      // redirect the user back to the communitypage using the router
-      // router.back();
+      
     };
 
     const onSelectImage = (event: React.ChangeEvent<HTMLInputElement>) => {
