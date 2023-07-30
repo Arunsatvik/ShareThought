@@ -116,18 +116,24 @@ const useCommunityData = () => {
             ),
           }));
         } catch (error: any) {
-          console.log("leaveCommunity error", error);
+          console.log("leaveCommunity error", error); 
           setError(error.message);
         }
         setLoading(false);
       };
 
     useEffect(() => {
-        if(!user) return;
+        if(!user){
+            setCommunityStateValue(prev => ({
+                ...prev,
+                mySnippets:[]
+        }));
+        return;
+        }
         getMySnippets();
     }, [user]);
 
-    return {
+    return { 
         //data and functions
         communityStateValue,
         onJoinOrLeaveCommunity,

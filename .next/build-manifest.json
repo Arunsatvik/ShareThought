@@ -27,6 +27,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/r/[communityId].js"
     ],
+    "/r/[communityId]/comments/[pid]": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/r/[communityId]/comments/[pid].js"
+    ],
     "/r/[communityId]/submit": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
