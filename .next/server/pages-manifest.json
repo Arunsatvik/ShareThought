@@ -2,7 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/r/[communityId]": "pages/r/[communityId].js",
-  "/r/[communityId]/comments/[pid]": "pages/r/[communityId]/comments/[pid].js",
-  "/r/[communityId]/submit": "pages/r/[communityId]/submit.js"
+  "/": "pages/index.js",
+  "/r/[community]": "pages/r/[community].js",
+  "/r/[community]/comments/[pid]": "pages/r/[community]/comments/[pid].js"
 }
